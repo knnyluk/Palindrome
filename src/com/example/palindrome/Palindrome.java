@@ -1,7 +1,9 @@
 package com.example.palindrome;
 
+import java.util.Scanner;
 public class Palindrome {
     public static boolean isPalindrome(String str) {
+        str = str.toLowerCase();
         int frontIndex = 0;
         int backIndex = str.length() - 1;
 
@@ -16,6 +18,13 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome("lolo"));
+        Scanner userInput = new Scanner(System.in);
+        String userString = userInput.nextLine();
+        if (isPalindrome(userString)) {
+            System.out.println("\n\n" + userString + " is a palindrome.");
+        } else {
+            System.out.println("\n\n" + userString + " is not a palindrome.");
+        }
+
     }
 }
