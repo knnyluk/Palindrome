@@ -19,11 +19,12 @@ public class Palindrome {
 
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
+        System.out.println("\nGive me a word and I shall tell you whether is palindromes or not.");
         String userString = userInput.nextLine();
         if (isPalindrome(userString)) {
-            System.out.println("\n\n" + userString + " is a palindrome.");
+            System.out.println("\n" + userString + " is a palindrome.");
         } else {
-            System.out.println("\n\n" + userString + " is not a palindrome.");
+            System.out.println("\n" + userString + " is not a palindrome.");
         }
 
     }
