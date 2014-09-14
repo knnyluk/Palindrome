@@ -3,7 +3,7 @@ package com.example.palindrome;
 import java.util.Scanner;
 public class Palindrome {
     public static boolean isPalindrome(String str) {
-        str = str.toLowerCase();
+        str = str.trim().toLowerCase();
         int frontIndex = 0;
         int backIndex = str.length() - 1;
 
