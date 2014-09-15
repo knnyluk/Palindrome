@@ -2,21 +2,6 @@ package com.example.palindrome;
 
 import java.util.Scanner;
 public class Palindrome {
-//    public static boolean isPalindrome(String str) {
-//        str = str.trim().toLowerCase();
-//        int frontIndex = 0;
-//        int backIndex = str.length() - 1;
-//
-//        while ((backIndex - frontIndex) >= 1) {
-//            if (str.charAt(frontIndex) != str.charAt(backIndex)) {
-//                return false;
-//            }
-//            frontIndex++;
-//            backIndex--;
-//        }
-//        return true;
-//    }
-
     public static boolean isPalindrome(String inputStr) {
         String reversedStr = new StringBuilder(inputStr).reverse().toString();
         return (inputStr.trim().equals(reversedStr));
@@ -31,6 +16,5 @@ public class Palindrome {
         } else {
             System.out.println("\n\"" + userString + "\" is not a palindrome.");
         }
-
     }
 }
