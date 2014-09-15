@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Palindrome {
     public static boolean isPalindrome(String inputStr) {
         String reversedStr = new StringBuilder(inputStr).reverse().toString();
-        return (inputStr.trim().equals(reversedStr));
+        return (inputStr.equals(reversedStr));
     }
 
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Palindrome {
         if (isPalindrome(userString)) {
             System.out.println("\n\"" + userString + "\" is a palindrome.");
         } else {
-            System.out.println("\n\"" + userString + "\" is not a palindrome.");
+            System.out.println("\n\"" + userString + "\" is NOT a palindrome.");
         }
     }
 }
